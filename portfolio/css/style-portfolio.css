@@ -1,0 +1,438 @@
+/* CSS validated 1/5/21 12:00pm */
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+  --text-color: #001524;
+  --body-background-color: #F0EBD8;
+  --section-background-color: #fffae7;
+  --inset-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+  --hover-color:  #a89966;
+  --hover-transition: 500ms ease-in-out;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1024px;
+  font-family: Nunito, sans-serif ;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--body-background-color);
+  padding: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+header {
+  text-align: center;
+  margin: 10px;
+}
+
+p {
+  font-size: 1em;
+  margin: 1.5em;
+}
+
+h1 {
+  color: #0D1321;
+  text-shadow: 1px 1px 3px #3E5C76;
+}
+
+
+h2,
+h3,
+a {
+  color: #1D2D44;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+a {
+   text-decoration: none;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.profile-image {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+
+.main-nav a {
+  font-size: 2rem;
+  transition: 1000ms ease-in-out;
+}
+
+.social-svg {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 5px;
+  text-shadow: 0 0 18px #a8a8a8;
+  transition: 1000ms ease-in-out;
+}
+
+
+
+/*=================================
+Pseudo-Styles
+================================== */
+
+.main-nav a:hover,
+.portfolio-header:hover {
+  color: var(--hover-color);
+  transition: var(--hover-transition);
+}
+
+#skills a:hover {
+  color: var(--hover-color);
+  transition: var(--hover-transition)
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 2.75em;
+  display: block;
+}
+
+.main-nav li {
+	margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+#skills {
+  background-color: var(--section-background-color);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: var(--inset-box-shadow);
+}
+
+
+
+/* Main styles ----*/
+
+.profilepic {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 1px;
+  box-shadow: var(--inset-box-shadow);
+}
+
+.main-header {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main-heading {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.name {
+  display: block;
+  font-size: 2em;
+  /* text-align: center; */
+}
+
+.nav {
+  padding: 10px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+
+.nav li {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  list-style-type: none;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+}
+
+.bio {
+  text-align: left;
+  padding: 10px;
+  margin: 0 auto;
+  line-height: 1.3em;
+  font-size: 1.5rem;
+}
+
+.main-heading {
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.portfolio {
+  background-color:#fffae7;
+  border-radius: 5px;
+  box-shadow: var(--inset-box-shadow);
+}
+
+.portfolio-heading {  
+  border-radius: 5px;
+  width: 275px;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 2.75rem;
+  font-weight: bold;
+  background-color: #fffcf2;
+  box-shadow: 2px 2px 7px rgba(0,0,0,0.9);
+}
+
+.portfolio-header {
+  font-weight: 600;
+
+}
+
+#contact {
+  padding: 20px 0;
+}/* This puts padding around the #contact id container at the bottom of the page*/
+
+footer {
+  text-align: initial;
+} /*This causes my name in the footer to align left when in the mobile view. */
+
+.bottom-name {
+  font-size: 1em;
+  line-height: 0.15;
+  float: left;
+} /*This aligns my name with the "back to top" on the same line.  The font size is reduced and line height aligns the name with "back to top"*/
+
+.footer-nav ul {
+  padding-left: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.footer-nav li {
+  display: inline-block;
+} /*This causes the "back-to-top" text to align to the right of my name. */
+
+.footer-nav a {
+  line-height: 2.15;
+} /*This changes the line height between the nav items in the footer unordered list and separates the items in the inline list.  Multiply times the default font size.*/
+
+.mobile-nav {
+  display: none;
+} /*This hides three of the items in the mobile-nav class when viewed in the mobile viewport.*/
+
+.skills,
+li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.skill {
+  border: 1px;
+  border-radius: 5px;
+  background-color: #748cab;
+  padding: 5px;
+  margin: 5px;
+}
+
+.skill:nth-child(odd) {
+  background-color: #0b6eb4;
+}
+
+/* ---- Layout Containers ---- */
+
+
+ .container {
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    background-color: #748CAB;
+    padding: 10px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    box-shadow: var(--inset-box-shadow);
+}
+
+
+/* =================================
+ Media Queries
+==================================== */
+
+ @media (min-width: 768px) {
+
+    .main-nav {
+         margin: 30px auto 60px;
+    }
+    .main-nav li {
+      display: inline-block;
+      margin: 0 10px;
+      
+    }
+
+    .main-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .main-nav a {
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .profilepic {
+      float: right;
+      height: 200px;
+      width: 200px;
+      margin: 50px;
+      
+    }
+
+    .name {
+      display: block;
+      font-size: 3.75em;
+     
+    }
+
+    .bio {
+        float: left;
+        text-align: left;
+        padding: 10px 10px;
+        margin: 0 auto;
+        line-height: 1.3em;
+        width: 50%;
+    }
+
+
+    #content-group div {
+      min-height: 425px;
+    } /*This constrains the size of this container*/
+
+    .marketing {
+      float: left;
+      width: 50%;
+    }
+
+    .search {
+      float: left;
+      width: 50%;
+    }
+
+    .travel {
+      float: left;
+      width: 50%;
+    }
+
+    .map {
+      float: left;
+      width: 50%;
+    }
+
+    .gallery {
+      float: left;
+      width: 50%;
+    }
+
+    .calculator {
+      float: left;
+      width: 50%;
+    }
+
+
+
+    .back-to-top {
+      display: none;
+    } /*This makes the display of "back to top" dissappear at the bottom of the page.*/
+
+    .mobile-nav {
+      display: inline-block;
+    }   /* This causes the mobile nav list items to show up and appear side by side.*/
+
+    
+
+}
+
+
+@media (min-width: 1024px) {
+  .main-nav {
+    text-align: initial;
+  }
+    .name {
+      float: left;
+      line-height: 0.15;
+      margin-left: 10px;
+    } /*This causes my name to float to the left in wider 1024 viewport.*/
+
+    .main-nav ul {
+      text-align: right;
+    } /* This causes the mobile nav ul list items to appear at the bottom right in >1024px viewport.*/
+
+    .marketing {
+      float: left;
+      width: 33.3%;
+    }
+
+    .search {
+      float: left;
+      width: 33.3%;
+    }
+
+    .travel {
+      float: left;
+      width: 33.3%;
+    }
+
+    .map {
+      float: left;
+      width: 33.3%;
+    }
+
+    .gallery {
+      float: left;
+      width: 33.3%;
+    }
+
+    .calculator {
+      float: left;
+      width: 33.3%;
+    }
+
+
+    }
+
+  /*Float Clearfix*/
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
