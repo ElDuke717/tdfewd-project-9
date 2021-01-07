@@ -37,6 +37,6 @@ window.addEventListener('load', function () {
 const greeting = document.querySelector('.greeting');
 
 document.querySelector('.name-title').addEventListener('click', e => {
-    greeting.classList.remove("hidden")
+    greeting.classList.remove("hidden");
     greeting.innerText = 'Please enjoy your trip through the nebula...';
 });
