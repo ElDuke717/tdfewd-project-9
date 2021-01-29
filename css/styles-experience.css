@@ -47,6 +47,11 @@ body {
   text-shadow: 0 0 18px var(--glow-color);
 }
 
+.workplace,
+.education {
+  margin-bottom: 50px;
+}
+
 .link {
   font-size: 50px;
   font-weight: bold;
