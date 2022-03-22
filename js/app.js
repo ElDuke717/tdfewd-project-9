@@ -1,6 +1,6 @@
 const jobArray = ['Web Developer', 'JavaScript Learner', 'Food Scientist', 'Health Coach'];
 const job = document.querySelector('.job');
-const jobList = ['Full Stack Developer', 'React', 'Food Scientist',  'Dad', 'Lifelong learner' ];
+const jobList = ['Full Stack Developer', 'React', 'Dad', 'Lifelong Learner', 'JavaScript' ];
 var i = 0;
 
 function nextItem() {
